@@ -115,7 +115,7 @@ function updateMenuItems(plan) {
 window.logout = function() {
     if (confirm("Você tem certeza que deseja sair?")) {
         signOut(auth).then(() => {
-            window.location.href = "login.html";
+            window.location.href = "index.html";
         }).catch((error) => {
             console.error("Erro ao fazer logout:", error);
         });
