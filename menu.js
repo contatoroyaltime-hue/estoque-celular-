@@ -57,8 +57,8 @@ const effectiveUidPromise = new Promise((resolve, reject) => {
         } else {
             // Se não há usuário, redireciona para o login (exceto nas páginas de login/cadastro)
             const currentPage = window.location.pathname.split('/').pop();
-            if (currentPage && !['login.html', 'cadastro.html'].includes(currentPage)) {
-                window.location.href = 'login.html';
+            if (currentPage && !['index.html', 'cadastro.html'].includes(currentPage)) {
+                window.location.href = 'index.html';
             }
             reject("Usuário não autenticado.");
         }
